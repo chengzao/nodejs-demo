@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <link rel="stylesheet" href="www/css/main.css">
+</head>
+<body>
+  <h1>首页</h1>
+  <ul>
+    <li><a href=""><img src="www/img/01.jpg" width="200" alt=""></a></li>
+    <li><a href=""><img src="www/img/02.jpg" width="200" alt=""></a></li>
+    <li><a href=""><img src="www/img/03.jpg" width="200" alt=""></a></li>
+    <li><a href=""><img src="www/img/04.jpeg" width="200" alt=""></a></li>
+  </ul>
+  <a href="http://192.168.3.28:3000/login">Go Login</a>
+  <button id="btn">点我</button>
+  <script>
+    var oBtn = document.querySelector('#btn');
+    var count = 0;
+    oBtn.addEventListener('click',function (e) {
+      
+      count++;
+      console.log(count);
+    });
+  </script>
+  <script src="www/js/main.js"></script>
+</body>
+</html>

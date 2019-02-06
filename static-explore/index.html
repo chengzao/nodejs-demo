@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html i18n-values="dir:textdirection;lang:language" dir="ltr" lang="undefined" i18n-processed="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="google" value="notranslate">
+  <title id="title">static</title>
+  <link rel="stylesheet" href="/www/css/main.css">
+</head>
+
+<body>
+  <div id="listingParsingErrorBox" i18n-values=".innerHTML:listingParsingErrorBoxText">糟糕！Google Chrome无法解读服务器所发送的数据。请<a href="http://code.google.com/p/chromium/issues/entry">报告错误</a>，并附上<a href="LOCATION">原始列表</a>。</div>
+  <span id="parentDirText" style="display:none" i18n-content="parentDirText">[上级目录]</span>
+  <h1>{{title}}</h1>
+  <h1 id="header" i18n-content="header">static</h1>
+  <table id="table">
+    <tbody>
+      <tr class="header">
+        <td i18n-content="headerName">名称</td>
+        <td class="detailsColumn" i18n-content="headerSize">大小</td>
+        <td class="detailsColumn" i18n-content="headerDateModified">修改日期</td>
+      </tr>
+    </tbody>
+    <tr>
+      <td><a class="icon up" href="{{prev}}">[上级目录]</a></td>
+      <td class="detailsColumn"></td>
+      <td class="detailsColumn"></td>
+    </tr>
+    {{each dirArr as value i}}
+    <tr>
+      <td><a class="icon dir" href="{{value.href}}">{{value.name}}/</a></td>
+      <td class="detailsColumn"></td>
+      <td class="detailsColumn">{{value.mtime}}</td>
+    </tr>
+    {{/each}} 
+    {{each fileArr as value i}}
+    <tr>
+      <td><a class="icon file" href="{{value.href}}">{{value.name}}/</a></td>
+      <td class="detailsColumn">{{value.size}}</td>
+      <td class="detailsColumn">{{value.mtime}}</td>
+    </tr>
+    {{/each}}
+  </table>
+</body>
+
+</html>

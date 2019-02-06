@@ -1,0 +1,8 @@
+###### What can I do?
+
+Most things that you can do manually in the browser can be done using Puppeteer! Here are a few examples to get you started:
+
+* Generate screenshots and PDFs of pages.
+* Crawl a SPA and generate pre-rendered content (i.e. "SSR").
+* Automate form submission, UI testing, keyboard input, etc.
+* Create an up-to-date, automated testing environment. Run your tests directly in the latest version of Chrome using the latest JavaScript and browser features.

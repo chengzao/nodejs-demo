@@ -1,0 +1,12 @@
+ ###### What can I do?
+＃＃＃＃＃＃ 我能做什么？
+ Most things that you can do manually in the browser can be done using Puppeteer! Here are a few examples to get you started:
+你可以在浏览器中手动完成的大部分事情都可以使用Puppeteer完成！这里有几个例子可以帮助你开始：
+ * Generate screenshots and PDFs of pages.
+*生成页面的截图和PDF。
+ * Crawl a SPA and generate pre-rendered content (i.e. "SSR").
+*抓取SPA并生成预先呈现的内容（即“SSR”）。
+ * Automate form submission, UI testing, keyboard input, etc.
+*自动表单提交，UI测试，键盘输入等。
+ * Create an up-to-date, automated testing environment. Run your tests directly in the latest version of Chrome using the latest JavaScript and browser features.
+*创建一个最新的自动化测试环境。使用最新的JavaScript和浏览器功能，直接在最新版本的Chrome中运行测试。

@@ -1,0 +1,12 @@
+{
+  "name": "fileInit",
+  "version": "1.0.0",
+  "description": "一个项目结构初始化工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
