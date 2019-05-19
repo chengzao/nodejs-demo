@@ -39,7 +39,8 @@
     "babel-core": "^6.26.3",
     "babel-jest": "^23.6.0",
     "lodash": "^4.17.11",
-    "puppeteer": "^1.12.2",
+    "nodemon": "^1.19.0",
+    "puppeteer": "^1.16.0",
     "ramda": "^0.25.0"
   },
   "config": {

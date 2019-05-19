@@ -1,0 +1,35 @@
+# REST Client for Visual Studio Code
+# mock url: easy-mock
+
+@easyMock =  http://localhost:8081
+@post = Content-Type: application/json
+
+###
+GET {{easyMock}}/api/blog/list?author=xiaoming&keyword=aaa HTTP/1.1
+
+###
+POST {{easyMock}}/api/blog/new HTTP/1.1
+{{post}}
+
+{
+  "name": "小明",
+  "age": 12
+}
+
+###
+POST {{easyMock}}/api/blog/update?id=1 HTTP/1.1
+{{post}}
+
+{
+  "name": "小明",
+  "age": 12
+}
+
+###
+POST {{easyMock}}/api/user/new
+{{post}}
+
+{
+  "user": "zhangsan",
+  "pwd": 123
+}
