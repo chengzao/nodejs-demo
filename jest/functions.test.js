@@ -1,4 +1,5 @@
-import functions from './functions'
+const functions = require('./functions')
+
 const { add, isNull, createUser, chunkArray} = functions
 
 // toBe

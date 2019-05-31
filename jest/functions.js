@@ -1,4 +1,4 @@
-import axios from 'axios';
+const axios = require('axios')
 
 const chunkArray = (arr, len) => {
   // Init chunked arr
@@ -20,8 +20,7 @@ const chunkArray = (arr, len) => {
   return chunkedArr
 }
 
-
-export default {
+module.exports = {
   add: (num1, num2) => num1 + num2,
   isNull: () => null,
   createUser: () => {
