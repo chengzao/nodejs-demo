@@ -1,5 +1,9 @@
-const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer-core');
 const path = require('path');
+
+// 本地安装的 chrome 绝对地址
+const ChromePath = path.resolve('/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary')
+
 const fs = require('fs');
 const util = require('util');
 
@@ -17,7 +21,7 @@ const outPath = path.join(__dirname,CONFIG.out);
 const trans = async ()=>{
     try {
         //打开浏览器，进入谷歌翻译网页
-        const browser = await puppeteer.launch({headless: false});
+        const browser = await puppeteer.launch({headless: false, executablePath: ChromePath});
         const page = await browser.newPage();
         await page.goto(CONFIG.url);
 

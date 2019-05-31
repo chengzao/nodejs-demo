@@ -1,7 +1,11 @@
 // 引入依赖插件
-const puppeteer = require('puppeteer');
-const fs = require('fs');
+const puppeteer = require('puppeteer-core');
 const path = require('path');
+
+// 本地安装的 chrome 绝对地址
+const ChromePath = path.resolve('/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary')
+
+const fs = require('fs');
 const request = require('request');
 const colors = require('colors');
 
@@ -37,7 +41,8 @@ let ViewPort = {
 // 启动puppeteer
 puppeteer.launch({
   // root 权限下需要取消sandbox
-  args: ['--no-sandbox']
+  args: ['--no-sandbox'],
+  executablePath: ChromePath
 }).then(async browser => {
   theBrowser = browser
   // 打开浏览器后，新建tab页
