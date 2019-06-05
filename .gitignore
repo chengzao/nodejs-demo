@@ -3,3 +3,5 @@
 .idea
 .vscode
 *.log
+yarn.lock
+package-lock.json
