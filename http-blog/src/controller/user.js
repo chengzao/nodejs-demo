@@ -1,5 +1,9 @@
+const { escape } = require('../db/mysql')
+
 // /api/user/login
 const login = (user, pwd) => {
+  user = escape(user)
+  pwd = escape(user)
   if(user == 'zhangsan' && pwd == '123'){
     return true
   }else{

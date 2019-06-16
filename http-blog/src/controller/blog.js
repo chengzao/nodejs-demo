@@ -41,6 +41,11 @@ const getDetail = (id) => {
 // /api/blog/new
 const newBlog = (blogData = {}) => {
   console.log('blogData', blogData)
+  const title = xss(blogData.title)
+  const content = xss(blogData.content)
+  const author = xss(blogData.author)
+  const createTime = xss(blogData.createTime)
+
   return {
     id: 3
   }
