@@ -1,0 +1,65 @@
+# REST Client for Visual Studio Code
+# mock url: easy-mock
+
+@easyMock =  http://localhost:8081
+@post = Content-Type: application/json
+
+### 获取博客列表
+GET {{easyMock}}/api/blog/list
+
+### 创建博客
+POST {{easyMock}}/api/blog/new
+{{post}}
+
+{
+  "title": "title 1",
+  "content": "content 1"
+}
+
+### 获取博客详情
+GET {{easyMock}}/api/blog/detail?author=xiaoming&keyword=aaa
+
+
+### 更新博客
+POST {{easyMock}}/api/blog/update?id=1
+{{post}}
+
+{
+  "title": "title 2",
+  "content": "content 2"
+}
+
+### 删除博客
+POST {{easyMock}}/api/blog/del
+{{post}}
+
+{
+  "name": "小明",
+  "age": 12
+}
+
+### 创建用户
+POST {{easyMock}}/api/user/create
+{{post}}
+
+{
+  "user": "zhangsan",
+  "pwd": 123
+}
+
+### 登录用户
+POST {{easyMock}}/api/user/login
+{{post}}
+
+{
+  "user": "zhangsan",
+  "pwd": 123
+}
+### 注销登录
+POST {{easyMock}}/api/user/logout
+{{post}}
+
+{
+  "user": "zhangsan",
+  "pwd": 123
+}
