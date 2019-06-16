@@ -1,6 +1,22 @@
+const { exec, escape } = require('../db/mysql')
+
 // /api/blog/list
 const getList = (author, keyword) => {
-  console.log('author', author, 'keyword', keyword);
+  // console.log('author', author, 'keyword', keyword);
+  // // sql
+  // let sql = `select * from blogs where 1=1 `
+
+  // if(author){
+  //   sql += `and author='${author}' `
+  // }
+  // if(keyword){
+  //   sql += `and title like '%${keyword}%' `
+  // }
+
+  // sql += `order by createtime desc;`
+
+  // return exec(escape(sql))
+
   return [
     {
       id: 1,

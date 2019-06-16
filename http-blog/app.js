@@ -45,6 +45,7 @@ const serverHandle = (req, res) => {
 
     // handle blog data
     const blogData = handleBlogRouter(req, res)
+
     if (blogData) {
       res.end(
         JSON.stringify(blogData)

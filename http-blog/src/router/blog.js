@@ -14,8 +14,8 @@ const handleBlogRouter = (req,res) => {
     const keyword = req.query.keyword || ''
 
     const listData = getList(author, keyword)
-
     return new SuccessModal(listData)
+
   }
 
   // get blog detail
