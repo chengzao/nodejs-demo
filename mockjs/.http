@@ -1,0 +1,23 @@
+@url= http://127.0.0.1:3000
+@json = Content-Type: application/json
+
+### get
+GET {{url}}/api/mockjs/hello
+
+###
+POST {{url}}/api/mockjs/123
+{{json}}
+
+{
+  "name": "小明",
+  "age": 12
+}
+
+
+###
+PUT {{url}}/api/mockjs/233 HTTP/1.1
+name: put
+
+###
+DELETE {{url}}/api/mockjs/12222 HTTP/1.1
+
